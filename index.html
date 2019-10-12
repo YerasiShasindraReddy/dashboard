@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	
+	<link href="main.css" rel="stylesheet" type="text/css">
+	
+    <title>AgriControl</title>
+
+	
+  </head>
+  <body>
+	
+	<div class="container-fluid header p-0">
+		<div class="row ml-0 mr-0">
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">AgriControl<i class="fas fa-times pt-1" style="float:right;"></i></a>
+				<nav class="navbar p-0">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link first mb-2" href="#">Dashboard</a>
+						</li> 
+						<li class="nav-item">
+							<h6>Reports</h6>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle btn1" type="button" data-toggle="dropdown">AgriControl stats</span>
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Installation</a></li>
+									<li><a href="#">Customers</a></li>
+									<li><a href="#">Dealers</a></li>
+									<li><a href="#">Monthly Installments</a></li>
+									<li><a href="#">Modules</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle mb-2" type="button" data-toggle="dropdown">OneControl stats
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu mt-0 pt-0">
+									<li><a href="#">Customers</a></li>
+									<li><a href="#">Dealers</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<h6>Inventory Management</h6>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Inventory Production
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Master Data</a></li>
+									<li><a href="#">Operations</a></li>
+									<li><a href="#">Reports</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle mb-2" type="button" data-toggle="dropdown">Inventory Sales
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Master Data</a></li>
+									<li><a href="#">Operations</a></li>
+									<li><a href="#">Reports</a></li>
+								</ul>	
+							</div>
+						</li>
+						<li class="nav-item">
+							<h6>CRM</h6>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Invoice
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Invoices</a></li>
+									<li><a href="#">Invoice Print View</a></li>
+									<li><a href="#">Create Invoice</a></li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Support Ticket
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Manage Ticket</a></li>
+									<li><a href="#">Open New Ticket</a></li>
+								</ul>	
+							</div>
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">User Management
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Manage Users</a></li>
+									<li><a href="#">Create New User</a></li>
+								</ul>	
+							</div>
+						</li>
+						
+					</ul>
+				</nav>
+			</div>
+
+			
+			<div id="main">
+				<div class="fourteen"><button class="openbtn" id="openbtn1" onclick="openNav()" style="background-color:#777;color:#fff;font-size:26px;"><i class="fas fa-bars"></i></button> </div>
+					<div class="header1" id="header3">
+						<div class="dropdown pt-2">
+							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Super Admin
+							<span class="caret"></span>
+							</button>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="far fa-user"></i>My Profile</a></li>
+									<li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+									<li><a href="#"><i class="fas fa-power-off"></i>Logout</a></li>
+								</ul>	
+						</div>
+					</div>				
+			</div>
+			
+			
+			<div class="content p-0" id="five">
+				<div class="row" id="title">
+					<div class="header2"><h5>Dashboard</h5></div>
+				</div>
+				<div class="row" id="title1">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 fifteen" id="four">
+						<div class="row ml-0 mr-0">
+							<div class="card">
+								<div class="card-header">
+									<div class="d-flex">
+									<div class="col-6 col-md-5 col-lg-4 col-xl-5 col-xxl-6">
+										<h6 style="margin:0px;padding:0px;"><strong>Total Revenue</strong></h6>
+										<h3 style="margin:0px;padding:0px;float:left;">75%</h3>
+										<span class="text-success" style="float:left;"><i class="fas fa-long-arrow-alt-up"></i></span>
+										<span class="text-danger" style="padding-top:6px;"><i class="fas fa-long-arrow-alt-down"></i></span>
+									</div>
+									<div class="col-6 col-md-7 col-lg-8 col-xl-7 col-xxl-6 review">
+										<ul class="pl-0">
+											<li>$1000(Rev)</li>
+											<li>$1600(Viewers)</li>
+										</ul>
+									</div></div>
+									<hr>
+									<div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+										<div class="chart">
+											<div id="chart_div1"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 six" id="seventeen">
+						<div class="card card1">
+							<div class="card-body">
+								<div class="products">
+									<h6 class="card-title text-white">&nbsp <strong>Product Sold</strong></h6>
+									<h4 class="text-white">1021<i class="fa fa-caret-up"></i></h4>
+								</div>
+								<div class="chart">
+									  <div id="chart_pointSize2"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body eight">
+								<div class="products1">
+									<h6 class="card-title text-white"><strong>Conversion Rate</strong></h6>
+									<h4 class="text-white">32.10%</h4>
+								</div>
+								<div class="chart">
+									<div id="columnchart_values3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 pt-5" id="ten">
+						<div class="card">
+							<div class="card-body">
+								<div class="card-title">
+									<h6><strong>Total Average</strong></h6>
+								</div>
+								<div class="table">
+									<table class="table table-hover">
+										<tr>
+											<td>
+												<h6><span class="mon">January</span><span class="text-success"><i class="fa fa-arrow-up"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-success">62%</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6><span class="mon">February</span><span class="text-danger"><i class="fa fa-arrow-down"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-danger">48%</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6><span class="mon">March</span><span class="text-danger"><i class="fa fa-arrow-down"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-danger">48%</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6><span class="mon">April</span><span class="text-success"><i class="fa fa-arrow-up"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-success">52%</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6><span class="mon">May</span><span class="text-danger"><i class="fa fa-arrow-down"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-danger">48%</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6><span class="mon">June</span><span class="text-success"><i class="fa fa-arrow-up"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-success">62%</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h6><span class="mon">Jul</span><span class="text-success"><i class="fa fa-arrow-up"></i></span></h6>
+											</td>
+											<td>
+												<span class="text-right text-success">64%</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>	
+					</div>
+				
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 pt-5" id="sixteen">
+						<div class="row ml-0 mr-0">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">
+										<h6><strong>Local Based Sales</strong></h6>
+									</div>
+							
+									<div class="col-lg-12">
+										<div class="map">
+											<div id="chart_div4"></div>
+										</div>
+									</div>
+									<div class="col-lg-12 thirteen">
+										<ul class="row" style="margin-top:10px;margin-right:0px;margin-left:0px;padding-left:0px;text-align:center;list-style:none;color:#000;">
+											<li class="col-4"><a href="#"><i class="far fa-circle text-secondary mr-1"></i>Telangana</a></li>
+											<li class="col-4"><a href="#"><i class="far fa-circle text-warning mr-1"></i>Andhra Pradesh</a></li>
+											<li class="col-4"><a href="#"><i class="far fa-circle text-info mr-1"></i>Kurnool</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="row ml-0 mr-0" id="eleven">
+					<div class="col-md-12 col-lg-12 sales">
+						<div class="card">
+							<div class="row ml-0 mr-0">
+								<div class="col-md-8 col-lg-8 col-xl-8">
+									<div class="card-body">
+										<div class="online">
+											<h6 class="card-title"><strong>Total Sales</strong></h6>
+											<ul class="list">
+												<li>Online</li>
+												<li>Offline</li>
+											</ul>
+											<div class="btn">
+												<button type="button" class="btn btn-primary">View Details</button>
+											</div>
+										</div>
+										<div class="chart">
+											<div id="curve_chart5"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="col-md-4 col-lg-4 twelve">
+									<div class="card-body">
+										<h6 class="card-title" style="font-weight:bold;">Monthly Income
+										</h6>
+										<div class="chart">
+											<div id="donutchart6"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row ml-0 mr-0" id="abc">
+					<div class="col-md-12 col-lg-12 text-center bg-white mt-4">
+						<p style="color:#898989;padding-top:15px;">Copyright © Designed by DMW</p>
+					</div>
+				</div>
+				
+			</div>
+			
+		
+			
+		</div>
+	</div>
+	
+
+	 
+	
+	
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+	
+	
+function openNav() {
+	
+	
+	document.getElementById("openbtn1").style.visibility = "hidden";
+	
+		console.log(window.innerWidth);
+	if(window.innerWidth <= 440){
+		document.getElementById("mySidebar").style.width = "100%";
+
+		console.log('In 400');
+		
+	} 
+	else if((window.innerWidth >= 440) && (window.innerWidth <= 576)){
+		
+				document.getElementById("mySidebar").style.width = "50%";
+				document.getElementById("main").style.marginLeft = "50%";
+				document.getElementById("five").style.marginLeft = "50%";
+	 
+				document.getElementById("five").style.width = "50%";
+				document.getElementById("main").style.width = "50%";
+			}
+	else if((window.innerWidth >= 577) && (window.innerWidth <= 768)){
+			document.getElementById("mySidebar").style.width = "40%";
+				document.getElementById("main").style.marginLeft = "40%";
+				document.getElementById("five").style.marginLeft = "40%";
+	 
+				document.getElementById("five").style.width = "60%";
+				document.getElementById("main").style.width = "60%";
+			}
+	else if((window.innerWidth >= 769) && (window.innerWidth <= 992)){
+			document.getElementById("mySidebar").style.width = "30%";
+				document.getElementById("main").style.marginLeft = "30%";
+				document.getElementById("five").style.marginLeft = "30%";
+	 
+				document.getElementById("five").style.width = "70%";
+				document.getElementById("main").style.width = "70%";
+			}	
+		else if((window.innerWidth >= 992) && (window.innerWidth <= 1200)){
+				document.getElementById("mySidebar").style.width = "27%";
+				document.getElementById("main").style.marginLeft = "27%";
+				document.getElementById("five").style.marginLeft = "27%";
+	 
+				document.getElementById("five").style.width = "73%";
+				document.getElementById("main").style.width = "73%";
+		
+		}
+		else{
+			document.getElementById("mySidebar").style.width = "20%";
+				document.getElementById("main").style.marginLeft = "20%";
+				document.getElementById("five").style.marginLeft = "20%";
+	 
+				document.getElementById("five").style.width = "80%";
+				document.getElementById("main").style.width = "80%";
+		}
+	
+	drawCrosshairs();
+	drawChart2();
+	drawChart9();
+	drawMarkersMap();
+	drawChart5();
+	drawChart6();
+}
+function closeNav() {
+
+	document.getElementById("openbtn1").style.visibility = "visible";
+	
+			document.getElementById("mySidebar").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+				document.getElementById("five").style.marginLeft = "4%";
+	 
+				document.getElementById("five").style.width = "96%";
+				document.getElementById("main").style.width = "100%";
+			
+		
+	drawCrosshairs();
+	drawChart2();
+	drawChart9();
+	drawMarkersMap();
+	drawChart5();
+	drawChart6();
+	
+	}
+	  
+	
+
+   <!--chart1-->
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawCrosshairs);
+
+function drawCrosshairs() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'View');
+      data.addColumn('number', 'Rev');
+
+      data.addRows([
+			[0, 0, 0],    [1, 10, 5], [2, 15, 7],  [3, 17, 9],   [4, 18, 10],  [5, 21, 12], [6, 25, 18],  [7, 27, 19],  [8, 33, 25], [26, 52, 44], [27, 51, 43], [28, 49, 41], [29, 53, 45], [30, 55, 47], [31, 60, 52], [32, 61, 53], [34, 62, 54], [35, 65, 57], [45, 69, 61], [47, 70, 62],
+        [48, 72, 64], [49, 68, 60], [52, 67, 59], [53, 70, 62],
+        [54, 71, 63], [55, 72, 64], [56, 73, 65], [57, 75, 67], [58, 70, 62],
+        [60, 64, 56], [61, 60, 52], [62, 65, 57], [63, 67, 59], [64, 68, 60], [65, 69, 61],
+        [66, 70, 62], [67, 72, 64], [68, 75, 67], [69, 80, 72]
+      ]);
+
+      var options = {
+       
+        colors: ['#4CAF50', '#00A2FF'],
+        crosshair: {
+		
+          color: '#000',
+		   'width':'100%',
+          trigger: 'selection'
+		  
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div1'));
+
+      chart.draw(data, options);
+      chart.setSelection([{row: 38, column: 1}]);
+
+    }
+	
+	<!-- chart2-->
+	
+      google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart2);
+	function drawChart2() {
+        var data = google.visualization.arrayToDataTable([
+          ['X', 'Y'],
+          [0, 4],
+          [1, 2],
+          [2, 4],
+          [3, 6],
+          [4, 4]
+        ]);
+
+        var options = {
+          legend: 'none',
+          hAxis: { ticks: [] },
+          vAxis: { ticks: [] },
+          colors: ['#fff'],
+          pointShape: 'circle',
+		  'width':'100%',
+		   backgroundColor:'#f48665',
+          trendlines: {
+            0: {
+              type: 'polynomial',
+              degree: 3,
+              visibleInLegend: true,
+              pointSize: 20, // Set the size of the trendline dots.
+              opacity: 0.5
+            }
+          }
+      };
+
+      var chart = new google.visualization.ScatterChart(document.getElementById('chart_pointSize2'));
+
+      chart.draw(data, options);
+	  console.log('in chart');
+    }
+   
+   
+ 
+	
+	<!--chart3-->
+	
+	 
+	 google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart9);
+    function drawChart9() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["J", 10, "#fff"],
+        ["F", 20, "#fff"],
+        ["M", 15, "#fff"],
+        ["A", 40, "#fff"],
+		["M", 45, "#fff"],
+        ["J", 35, "#fff"],
+        ["J", 50, "#fff"],
+        ["A", 70, "#fff"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+       backgroundColor:'#a15cff',
+        'width':'100%',
+        bar: {groupWidth: "30%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values3"));
+      chart.draw(view, options);
+  }
+ 
+
+	 
+	 
+	 <!--chart4-->
+	 
+	 google.charts.load('current', {
+       'packages': ['geochart'],
+       // Note: you will need to get a mapsApiKey for your project.
+       // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+       'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+     });
+     google.charts.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country',   'Population', 'Area Percentage'],
+        ['France',  65700000, 50],
+        ['Germany', 81890000, 27],
+        ['Poland',  38540000, 23]
+      ]);
+
+      var options = {
+        sizeAxis: { minValue: 0, maxValue: 100 },
+        region: '155', // Western Europe
+        displayMode: 'markers',
+		 'width':'100%',
+        colorAxis: {colors: ['#e7711c', '#4374e0']} // orange to blue
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div4'));
+      chart.draw(data, options);
+    };
+   
+    
+	 
+	 
+	 
+	 <!--chart5-->
+		
+		 google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart5);
+
+      function drawChart5() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2015',  1000,      400],
+          ['2016',  1170,      460],
+          ['2017',  660,       1120],
+          ['2018',  1030,      540]
+        ]);
+
+        var options = {
+        
+          curveType: 'function',
+		   'width':'100%',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart5'));
+
+        chart.draw(data, options);
+      }
+    
+  
+    
+	
+	
+	  <!--chart6-->
+	  
+	   google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart6);
+      function drawChart6() {
+        var data = google.visualization.arrayToDataTable([
+         ['Task', 'Hours per Day'],
+          ['Jan-Apr',     11],
+          ['May-Jun',      2],
+          ['Jul-Aug',  2],
+          ['Sept-Oct', 2],
+          ['Nov-Dec',    7]
+        ]);
+
+        var options = {
+          title: 'Yearly Income',
+		   'width':'100%',
+          pieHole: 0.6,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart6'));
+        chart.draw(data, options);
+      }
+	  
+	  
+	  
+	  
+	  
+	  
+	   
+    </script>
+  
+   
+   
+  
+   
+  
+  
+  </body>
+</html>
